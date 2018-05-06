@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -O2
 LINKER = -lpthread -lm
-PROGRAM_NAME = trap
+PROGRAM_NAME = trap2
 
 
 all: $(PROGRAM_NAME)
