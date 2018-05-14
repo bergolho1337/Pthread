@@ -1,0 +1,18 @@
+To measure cache misses we can use Valgrind. 
+
+In order to do this first compile the source code by enabling debug information on compilation with:
+
+$ gcc <source_code.c> -O2 -g -o <executable>
+
+After that execute the program by calling Valgrind with the cachegrind tool activated.
+
+$ valgrind --tool=cachegrind ./executable <input_parameters>
+
+=============================================================================================================
+Try to run this with the cache miss example.
+
+The I1 miss rates tells us there was no instruction cache miss.
+
+The D1 miss rates tells us there was a lot of cache L1 misses.
+
+The LL miss rates tells us there was some Last Level cache misses.
