@@ -1,0 +1,27 @@
+Os codigos das solucoes estao na pasta Codigos
+
+Tem 2 arquivos la, um com mutex e outro em que implemento busy-waiting.
+
+Para testar cada um dos codigos pode-se fazer o seguinte: 
+
+Neste exemplo quero rodar o codigo com mutex:
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+1) Copiar o codigo-fonte da pasta /Codigos para a pasta /src renomeando o arquivo com o comando 'cp':
+
+$cp ./Codigos/trap-mutex.c ./src/pth_code.c 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+2) Execute o script do speedup.
+
+$ ./run_code.sh
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+3) Copie o arquivo de tempo da pasta ./Plot para a pasta ./Resultados renomeando do seu jeito:
+
+$ cp ./Plot/times.dat ./Resultados/times_com_mutex.dat
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+4) Processar este arquivo com o script em Python para gerar os graficos 
+
+OBS: nao fiz isso pq no cluster nao tinha como ver o grafico com o Python.    X-(
